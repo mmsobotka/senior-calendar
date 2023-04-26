@@ -26,14 +26,45 @@ public class MainActivity extends AppCompatActivity implements CalendarAdapter.o
     private RecyclerView recyclerViewCalendar;
     private LocalDate selectDate;
 
+    private Button button_backToMenu;
+    private Button button_goToPomiary;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        button_backToMenu = (Button) findViewById(R.id.backFromCalendartoMenuButton);
+        button_backToMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                backToMenuActivity();
+            }
+        });
+
+        button_goToPomiary = (Button) findViewById(R.id.goFromCalendartoPomiaryButton);
+        button_goToPomiary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToPomiaryActivity();
+            }
+        });
+
         initWidgets();
         selectDate = LocalDate.now();
         setMonthView();
+    }
+
+    public void goToPomiaryActivity() {
+        Intent intent = new Intent(this, MainActivity3.class);
+        startActivity(intent);
+    }
+
+    public void backToMenuActivity() {
+        Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
     }
 
     private void initWidgets() {
