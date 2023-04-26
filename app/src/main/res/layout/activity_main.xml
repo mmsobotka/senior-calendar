@@ -60,10 +60,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="PON"
+            android:text="NDZ"
             android:textColor="@color/gray"
             android:textAlignment="center"
             android:fontFamily="sans-serif-light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:text="PON"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
             android:textSize="16sp" />
 
         <TextView
@@ -80,10 +90,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ŚR"
-            android:textColor="@color/gray"
-            android:textAlignment="center"
             android:fontFamily="sans-serif-light"
+            android:text="ŚR"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
             android:textSize="16sp" />
 
         <TextView
@@ -91,8 +101,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="CZW"
-            android:textAlignment="center"
             android:textColor="@color/gray"
+            android:textAlignment="center"
             android:fontFamily="sans-serif-light"
             android:textSize="16sp" />
 
@@ -111,16 +121,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="SOB"
-            android:textColor="@color/gray"
-            android:textAlignment="center"
-            android:fontFamily="sans-serif-light"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="NDZ"
             android:textColor="@color/gray"
             android:textAlignment="center"
             android:fontFamily="sans-serif-light"
