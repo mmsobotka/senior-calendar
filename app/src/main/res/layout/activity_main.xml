@@ -148,7 +148,7 @@
             android:layout_height="46dp">
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/backFromCalendartoMenuButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -160,7 +160,7 @@
                 android:textAllCaps="true" />
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/goFromCalendartoPomiaryButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"

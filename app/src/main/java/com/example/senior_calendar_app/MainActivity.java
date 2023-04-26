@@ -45,8 +45,10 @@ public class MainActivity extends AppCompatActivity implements CalendarAdapter.o
     private void setMonthView() {
         monthYearText.setText(monthYearFromDate(selectDate));
         ArrayList<String> daysInMonth = daysInMonthArray(selectDate);
-        CalendarAdapter calendarAdapter = new CalendarAdapter(daysInMonth, this);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);
+        CalendarAdapter calendarAdapter = new CalendarAdapter(daysInMonth,
+                this);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager
+                (getApplicationContext(), 7);
         recyclerViewCalendar.setLayoutManager(layoutManager);
         recyclerViewCalendar.setAdapter(calendarAdapter);
     }
@@ -71,7 +73,8 @@ public class MainActivity extends AppCompatActivity implements CalendarAdapter.o
     }
 
     private String monthYearFromDate(LocalDate date) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM yyyy");
+        DateTimeFormatter formatter =
+                DateTimeFormatter.ofPattern("MMMM yyyy");
         return date.format(formatter);
 
     }
