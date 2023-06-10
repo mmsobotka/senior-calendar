@@ -10,4 +10,5 @@ public interface ProjectVariables {
     String IPv4 = "192.168.0.229:80";
     String URL = "http://" + IPv4 + "/senior-calendar/add_data.php";
     String GetDataURL = "http://" + IPv4 + "/senior-calendar/get_data.php";
+    String RECEIVE_DATA_RANGE = "30";
 }

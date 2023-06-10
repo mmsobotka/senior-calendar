@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
+
 public class MainActivity3 extends AppCompatActivity implements ProjectVariables {
     private Button button_backToMenu;
     private String user_id = "user1";
@@ -26,6 +30,8 @@ public class MainActivity3 extends AppCompatActivity implements ProjectVariables
         blood_pressure = (EditText) findViewById(R.id.bp_input);
         sugar_level = (EditText) findViewById(R.id.sugar_level);
         //
+        DataReceiver data_receiver = new DataReceiver(this);
+        data_receiver.execute(this.GetDataURL, this.COL5_NAME, this.RECEIVE_DATA_RANGE);
         button_backToMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
