@@ -18,7 +18,7 @@ public class HistoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_window);
+        setContentView(R.layout.history_window);
 
         button_notes = (Button) findViewById(R.id.notesButton);
         button_notes.setOnClickListener(new View.OnClickListener() {
