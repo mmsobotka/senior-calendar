@@ -1,12 +1,11 @@
 package com.example.senior_calendar_app;
 
-import android.annotation.SuppressLint;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class HistoryActivity extends AppCompatActivity {
 
@@ -14,7 +13,6 @@ public class HistoryActivity extends AppCompatActivity {
     private Button back_to_menu;
     private Button back_to_parametry;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
