@@ -46,6 +46,7 @@
             android:layout_weight="1">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/weight_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -83,6 +84,7 @@
             android:layout_weight="1">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bp_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -120,6 +122,7 @@
             android:layout_weight="1">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sugar_level"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -187,11 +190,11 @@
             android:textAllCaps="true"
             android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/imageView5"
+        <com.jjoe64.graphview.GraphView
             android:layout_width="match_parent"
-            android:layout_height="188dp"
-            app:srcCompat="@drawable/wykres" />
+            android:layout_height="200dip"
+            android:id="@+id/graph"
+            tools:ignore="MissingClass" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -260,6 +263,7 @@
             android:layout_weight="1">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/temperature_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -277,6 +281,7 @@
         android:layout_marginRight="80dp"
         android:background="@drawable/button_borders"
         android:fontFamily="sans-serif-light"
+        android:onClick="save_user_data"
         android:text="Zapisz pomiar"
         android:textAlignment="center"
         android:textAllCaps="true"
