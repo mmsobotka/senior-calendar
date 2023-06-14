@@ -7,19 +7,6 @@
     tools:context=".MeasuresActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="12dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461">
-
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
         android:layout_height="8dp"
@@ -36,8 +23,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="408dp"
-        android:layout_height="42dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +63,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout11"
-        android:layout_width="414dp"
+        android:layout_width="match_parent"
         android:layout_height="51dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,7 +101,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout14"
-        android:layout_width="416dp"
+        android:layout_width="match_parent"
         android:layout_height="51dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,7 +139,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="416dp"
+        android:layout_width="match_parent"
         android:layout_height="51dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -190,7 +177,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout6"
-        android:layout_width="414dp"
+        android:layout_width="match_parent"
         android:layout_height="51dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -290,5 +277,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.036" />
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"></LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

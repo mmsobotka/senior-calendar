@@ -7,14 +7,18 @@
     tools:context=".NotesActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="356dp"
+        android:layout_height="631dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,7 +46,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="403dp"
+            android:layout_height="355dp"
             android:orientation="vertical">
 
             <!-- SPACE TO CODE
@@ -54,8 +58,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="53dp"
+            android:layout_height="25dp"
             android:orientation="vertical"></LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -71,10 +76,9 @@
             </LinearLayout>
         </LinearLayout>
 
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="46dp">
+            android:layout_height="37dp">
 
             <Button
                 android:id="@+id/calenButton"
@@ -111,10 +115,8 @@
                 android:fontFamily="sans-serif-light"
                 android:text="parametry"
                 android:textAllCaps="true" />
-
         </LinearLayout>
 
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
