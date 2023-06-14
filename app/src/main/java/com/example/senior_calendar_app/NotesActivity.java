@@ -19,7 +19,7 @@ public class NotesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_window);
+        setContentView(R.layout.notes_window);
 
         button_calendar = (Button) findViewById(R.id.calenButton);
         button_calendar.setOnClickListener(new View.OnClickListener() {
