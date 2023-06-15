@@ -7,6 +7,82 @@
     tools:context=".MeasuresActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:text="saturacja "
+            android:textAllCaps="true"
+            android:textSize="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="194dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/saturation_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:hint=""
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:text="Tętno krwi"
+            android:textAllCaps="true"
+            android:textSize="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="194dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hr_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:hint=""
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
         android:layout_height="8dp"
@@ -71,8 +147,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="727dp"
-        android:layout_height="45dp"
+        android:layout_width="738dp"
+        android:layout_height="30dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
