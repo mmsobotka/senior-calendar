@@ -140,7 +140,6 @@ public class MeasuresActivity extends AppCompatActivity implements ProjectVariab
                     .show();
             return false;
         } else { return true; }
-
     }
 
     private String get_timestamp(){
