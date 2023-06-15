@@ -34,7 +34,7 @@
             android:layout_weight="1">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/bp_input"
+                android:id="@+id/saturation_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -45,7 +45,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout14"
+        android:id="@+id/linearLayout15"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +56,7 @@
         app:layout_constraintVertical_bias="0.352">
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textView15"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -149,7 +149,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout14"
+        android:id="@+id/linearLayout16"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -160,7 +160,7 @@
         app:layout_constraintVertical_bias="0.438">
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textView16"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -176,7 +176,7 @@
             android:layout_weight="1">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/bp_input"
+                android:id="@+id/hr_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -214,7 +214,7 @@
             android:layout_weight="1">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/sugar_level"
+                android:id="@+id/sugar_level_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"

@@ -45,44 +45,72 @@ public class DataReceiver extends AsyncTask<String, Void, String> {
     @Override
     protected void onPostExecute(String data) {
 
-        int x_value, y_value;
-        GraphView graph = (GraphView) ((Activity) context).findViewById(R.id.graph);
-
-        if (data != null) {
-            try {
-                JSONObject jsonObject = new JSONObject(data);
-                JSONArray arrJson = jsonObject.getJSONArray("data");
-                DataPoint[] points = new DataPoint[arrJson.length()];
-                for(int i = 0; i < arrJson.length(); i ++) {
-                    x_value = i;
-                    y_value = Integer.parseInt(arrJson.getString(i));
-                    Log.i("Taged value", String.valueOf(y_value));
-                    DataPoint data_point = new DataPoint(x_value, y_value);
-                    points[i] = data_point;
-                }
-                LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(points);
-                graph.addSeries(series);
-                graph.getViewport().setMaxX(points.length);
-                graph.getViewport().setXAxisBoundsManual(true);
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-        } else {
-            DataPoint[] points = new DataPoint[5];
-            for(int i = 0; i < 5; i ++) {
-                x_value = i;
-                y_value = 0;
-                DataPoint data_point = new DataPoint(x_value, y_value);
-                points[i] = data_point;
-            }
-            LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(points);
-            graph.addSeries(series);
-        }
+//        int x_value, y_value;
+//        GraphView graph = (GraphView) ((Activity) context).findViewById(R.id.graph);
+//
+//        if (data != null) {
+//            try {
+//                JSONObject jsonObject = new JSONObject(data);
+//                JSONArray arrJson = jsonObject.getJSONArray("data");
+//                DataPoint[] points = new DataPoint[arrJson.length()];
+//                for(int i = 0; i < arrJson.length(); i ++) {
+//                    x_value = i;
+//                    y_value = Integer.parseInt(arrJson.getString(i));
+//                    Log.i("Taged value", String.valueOf(y_value));
+//                    DataPoint data_point = new DataPoint(x_value, y_value);
+//                    points[i] = data_point;
+//                }
+//                LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(points);
+//                graph.addSeries(series);
+//                graph.getViewport().setMaxX(points.length);
+//                graph.getViewport().setXAxisBoundsManual(true);
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//
+//        } else {
+//            DataPoint[] points = new DataPoint[5];
+//            for(int i = 0; i < 5; i ++) {
+//                x_value = i;
+//                y_value = 0;
+//                DataPoint data_point = new DataPoint(x_value, y_value);
+//                points[i] = data_point;
+//            }
+//            graph.removeAllSeries();
+//            LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(points);
+//            graph.addSeries(series);
+//        }
     }
 
     @Override
     protected String doInBackground(String... strings) {
+        GraphView graph = (GraphView) ((Activity) context).findViewById(R.id.graph);
+        LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[]{
+                // on below line we are adding
+                // each point on our x and y axis.
+                new DataPoint(0, 115),
+                new DataPoint(1, 121),
+                new DataPoint(2, 124),
+                new DataPoint(3, 118),
+                new DataPoint(4, 130),
+                new DataPoint(5, 128),
+                new DataPoint(6, 119),
+                new DataPoint(7, 156),
+                new DataPoint(8, 122),
+                new DataPoint(9, 110),
+                new DataPoint(10, 128),
+                new DataPoint(11, 134),
+                new DataPoint(12, 130),
+                new DataPoint(13, 125),
+                new DataPoint(14, 133),
+                new DataPoint(15, 119),
+                new DataPoint(16, 110),
+                new DataPoint(17, 120)
+        });
+        graph.addSeries(series);
+        graph.getViewport().setMaxX(18);
+        graph.getViewport().setXAxisBoundsManual(true);
+
         String URL = strings[0];
         String column_name = strings[1];
         String n_values = strings[2];
