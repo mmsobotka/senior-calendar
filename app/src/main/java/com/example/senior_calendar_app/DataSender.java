@@ -45,9 +45,11 @@ public class DataSender extends AsyncTask<String, Void, String> implements Proje
         String timestamp = strings[1];
         String user_id = strings[2];
         String temperature = strings[3];
-        String weight = strings[4];
-        String blood_plessure = strings[5];
-        String heart_rate = strings[6];
+        String sugar_level = strings[4];
+        String weight = strings[5];
+        String blood_plessure = strings[6];
+        String heart_rate = strings[7];
+        String saturation = strings[8];
 
         try {
             java.net.URL url = new URL(URL);
@@ -66,11 +68,15 @@ public class DataSender extends AsyncTask<String, Void, String> implements Proje
                     + URLEncoder.encode(this.COL3_NAME, "UTF-8") + "="
                     + URLEncoder.encode(temperature, "UTF-8") + "&"
                     + URLEncoder.encode(this.COL4_NAME, "UTF-8") + "="
-                    + URLEncoder.encode(weight, "UTF-8") + "&"
+                    + URLEncoder.encode(sugar_level, "UTF-8") + "&"
                     + URLEncoder.encode(this.COL5_NAME, "UTF-8") + "="
-                    + URLEncoder.encode(blood_plessure, "UTF-8") + "&"
+                    + URLEncoder.encode(weight, "UTF-8") + "&"
                     + URLEncoder.encode(this.COL6_NAME, "UTF-8") + "="
-                    + URLEncoder.encode(heart_rate, "UTF-8");
+                    + URLEncoder.encode(blood_plessure, "UTF-8") + "&"
+                    + URLEncoder.encode(this.COL7_NAME, "UTF-8") + "="
+                    + URLEncoder.encode(heart_rate, "UTF-8") + "&"
+                    + URLEncoder.encode(this.COL8_NAME, "UTF-8") + "="
+                    + URLEncoder.encode(saturation, "UTF-8");
             Log.i("QUERY:", data);
             writer.write(data);
             writer.flush();
