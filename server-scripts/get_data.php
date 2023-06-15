@@ -2,7 +2,7 @@
 $user = 'root';
 $password = '';
 $db_name = 'senior-calendar';
-$table_name = 'users_data';
+$table_name = 'data';
 
 $conn = new mysqli('localhost', $user, $password, $db_name);
 if (!$conn) {
