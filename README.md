@@ -1,5 +1,4 @@
-
-https://github.com/mmsobotka/senior-calendar/assets/73854682/601112c5-2c85-4fd9-aeb7-e3df825678b5
+https://github.com/mmsobotka/senior-calendar/assets/73854682/ff055c25-c71a-4093-832d-2a30bc321e15
 
 Project Launch Instructions:
 1. Open the xampp/htdocs folder.
